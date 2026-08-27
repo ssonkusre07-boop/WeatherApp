@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Weather App</h1>
+
+        <form id="weatherForm">
+
+            <div class="search-box">
+                <input 
+                    type="text" 
+                    id="cityInput" 
+                    placeholder="Enter city name"
+                    autocomplete="off"
+                    required
+                >
+
+                <button type="submit">Search</button>
+            </div>
+
+        </form>
+
+        <p id="errorMessage"></p>
+
+        <div class="weather-card" id="weatherCard">
+
+            <div class="location">
+                <h2 id="cityName">City</h2>
+                <p id="country">Country</p>
+            </div>
+
+            <img id="weatherIcon" src="" alt="Weather Icon">
+
+            <h3 id="temperature">--°C</h3>
+
+            <p id="description">Weather condition</p>
+
+            <div class="weather-info">
+
+                <div class="info-box">
+                    <span>💧</span>
+                    <p>Humidity</p>
+                    <h4 id="humidity">--%</h4>
+                </div>
+
+                <div class="info-box">
+                    <span>💨</span>
+                    <p>Wind</p>
+                    <h4 id="wind">-- km/h</h4>
+                </div>
+
+                <div class="info-box">
+                    <span>🌡️</span>
+                    <p>Feels Like</p>
+                    <h4 id="feelsLike">--°C</h4>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
